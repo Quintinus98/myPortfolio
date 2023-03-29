@@ -1,0 +1,52 @@
+.menu {
+    padding: "10px";
+    margin: "10px"
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 50px auto;
+    width: 100%;
+    max-width: 1024px;
+}
+
+section {
+    margin: 20px;
+    max-width: 1366px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-props {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+}
+.container-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: auto;
+    gap: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 1024) {
+    .container-props {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .container-props {
+        width: 50%;
+    }
+}

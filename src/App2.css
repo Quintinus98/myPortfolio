@@ -169,7 +169,7 @@ header
   transition: all 0.3s linear;
 }
 
-.header .ant-menu li.ant-menu-item:after {
+/* .header .ant-menu li.ant-menu-item:after {
   left: auto;
   right: 30%;
 }
@@ -195,15 +195,16 @@ header
 .header .ant-menu li.ant-menu-item:hover:after {
   right: 5%;
   opacity: 1; 
-}
+} */
 
 /* 
 hero
 ---- 
 */
 .heroBlock {
-  background: url('assets/images/bg-madison.jpg') no-repeat;
-  /* background-position: 50% 100%; */
+  /* background: url('assets/images/bg-hero.jpg') no-repeat; */
+  background:rgba(0, 0, 0, 0.5);
+  background-position: 50% 100%;
   background-size: cover;
   height: 100vh;
 }
@@ -247,7 +248,8 @@ hero
   height: auto !important;
 }
 
-.heroBlock .btnHolder button {
+.heroBlock .btnHolder button,
+.heroBlock .btnHolder .fas {
   margin: 0 10px 0 0;
 }
 
@@ -284,8 +286,8 @@ how it works
 ------------
 */
 .worksBlock {
-  background: url('assets/images/bg-madison.jpg') no-repeat;
-  /* background:rgba(0, 0, 0, 0.5); */
+  /* background: url('assets/images/bg-works.jpg') no-repeat; */
+  background:rgba(0, 0, 0, 0.5);
   background-position: 50% 0;
   background-size: cover;
   background-attachment: fixed;
