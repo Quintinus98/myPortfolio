@@ -1,6 +1,7 @@
 import React from "react";
 import { AppHero } from "../features/Home/Hero";
 import { AppAbout } from "../features/Home/About";
+import { AppProjects } from "../features/Home/Projects";
 
 export const AppHome: React.FC = () => {
 
@@ -8,6 +9,7 @@ export const AppHome: React.FC = () => {
     <div className="main">
         <AppHero />
         <AppAbout />
+        <AppProjects />
     </div>
   )
 }
