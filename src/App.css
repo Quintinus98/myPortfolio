@@ -225,12 +225,28 @@ hero
   background: #1890ff !important;
 }
 
+.heroBlock .outerContent {
+  display: flex;
+}
+
 .heroBlock .content {
   max-width: 640px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0 0 70px;
+}
+
+.heroImage {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroImage img {
+  width: 100%;
+  height: auto;
 }
 
 .heroBlock h3 {
@@ -249,6 +265,13 @@ hero
 
 .heroBlock .btnHolder button {
   margin: 0 10px 0 0;
+}
+
+.antCardBody .ant-card-body {
+  padding: 0px;
+}
+.antImage .ant-card-cover img {
+  border-radius: 0 0 0 0;
 }
 
 /* 

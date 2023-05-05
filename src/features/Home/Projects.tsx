@@ -1,25 +1,15 @@
 import React from "react";
 import { Col, Row } from "antd";
 import { Card } from 'antd';
-import Icon from "@ant-design/icons";
-// import * as logo from "../../assets/images/mystore.png";
-import logo from '../../assets/images/mystore.png';
-
-const { Meta } = Card;
+import items from '../../data'
 
 
-const items = [
-  {
-    key: "1",
-    src: "../../assets/images/EBS-deploy.PNG",
-    title: "My Store",
-    link: "buy4him.netlify.com",
-    icon: <Icon type="link" />
-  }
-]
+
+
 // icon: <Icon type="github" />
 
-export const AppProjects: React.FC = () => {
+export const AppProjects: React.FC  = () => {
+
 	return (
 		<div className="block aboutBlock bgGray">
       <div className="container-fluid">
@@ -32,22 +22,19 @@ export const AppProjects: React.FC = () => {
           {
             items.map(item => {
               return (
-                <Col span={8} >
+                <Col span={8} key={item.key}>
                   <Card hoverable
-                      cover={<img alt={item.title} src={logo} />}
+                      className="antCardBody antImage"
+                      extra={<a href={item.link}>More</a>}
+                      title={item.title}
+                      cover={<img alt={item.title} src={item.src} />}
                     >
-                      <Meta title={item.title} description={item.link} />
-                    </Card>
+                  </Card>
                 </Col>
               )
             })
           }
-          
-          <Col span={8} >2</Col>
-          <Col span={8} >3</Col>
         </Row>
-
-       
 
         </div>
 
